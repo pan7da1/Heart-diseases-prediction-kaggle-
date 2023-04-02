@@ -7,10 +7,9 @@ MODEL_NAME = 'model_cardio_04_03_23.pcl'
 
 # definition load-model function 
 def load():
-    with open(f'/models/{MODEL_NAME}', 'rb') as fid:
+    with open(f'.\models\{MODEL_NAME}', 'rb') as fid:
         return pickle.load(fid)
 
-    
 # function define arterial pressure level
 def ag_step(ap_sis):
     if ap_sis < 140:
