@@ -8,7 +8,7 @@ MODEL_NAME = 'model_cardio_04_03_23.pcl'
 
 # функция для загрузки модели
 def load():
-    with open(f'.\models\{MODEL_NAME}', 'rb') as fid:
+    with open(os.path.dirname(__file__) + f'/models/{MODEL_NAME}', 'rb') as fid:
         return pickle.load(fid)
 
     
